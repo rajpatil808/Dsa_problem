@@ -6,5 +6,7 @@ public class practice {
          int b = 20;
 
          System.out.println(a + b);
+         int d=40;
+         System.out.println(d);
     }
 }
