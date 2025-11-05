@@ -4,18 +4,30 @@ import java.util.*;
 public class practice {
      public static void main(String[] args) {
 
+
+
+      Scanner in = new Scanner(System.in);
+
+      int n = in.nextInt();
+
       ArrayList<Integer> arr = new ArrayList<>();
 
-      arr.add(1);
-      arr.add(3);
-      arr.add(4);
-      arr.add(9);
+      for(int i = 0; i < n; i++) {
+          int x = in.nextInt();
+          arr.add(x);
+      }
 
-      int n = arr.size();
       for(int i = 0; i < n; i++) {
           System.out.print(arr.get(i)+" ");
       }
 
+         System.out.println();
+
+      arr.remove((arr.size() - 2));
+
+      for(int i = 0; i < n; i++) {
+          System.out.print(arr.get(i)+" ");
+      }
 
     }
 }
